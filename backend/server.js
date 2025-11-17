@@ -9,7 +9,16 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+    {
+    origin: [
+      "http://localhost:5173",      // local development
+      "https://capstone-project3-psi.vercel.app", // YOUR VERCEL FRONTEND
+    ],
+    credentials: true,
+    methods: "GET,POST,PUT,DELETE",
+  }
+));
 app.use(express.json());
 
 app.get('/', (req, res) => {
