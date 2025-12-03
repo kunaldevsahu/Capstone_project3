@@ -1,0 +1,61 @@
+.fq-member-root {
+  padding: 30px;
+  color: #ffffff;
+}
+
+.fq-page-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.fq-table-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 10px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+}
+
+.fq-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.fq-table th,
+.fq-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: left;
+}
+
+.fq-table th {
+  color: #f44336;
+}
+
+.fq-table button {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  margin-right: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.fq-danger-btn {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.fq-primary-btn {
+  background: #ffffff;
+  color: #000;
+}
+
+.fq-primary-btn:hover {
+  background: #f44336;
+  color: #fff;
+}

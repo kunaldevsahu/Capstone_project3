@@ -1,0 +1,28 @@
+.fq-membership-root {
+  padding: 40px;
+  color: #ffffff;
+}
+
+.fq-membership-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 28px;
+  max-width: 420px;
+  margin-top: 20px;
+  backdrop-filter: blur(6px);
+}
+
+.fq-membership-card p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.active {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.expired {
+  color: #ef4444;
+  font-weight: 600;
+}

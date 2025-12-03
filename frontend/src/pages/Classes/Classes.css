@@ -1,0 +1,78 @@
+.fq-class-root {
+  padding: 30px;
+  color: #ffffff;
+}
+
+.fq-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.fq-class-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.fq-class-form input,
+.fq-class-form button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.fq-class-form button {
+  background: #ffffff;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 999px;
+  transition: 0.2s;
+}
+
+.fq-class-form button:hover {
+  background: #f44336;
+  color: #fff;
+}
+
+/* GRID */
+.fq-class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.fq-class-card {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+
+.fq-class-card:hover {
+  transform: translateY(-6px);
+}
+
+.fq-class-card h4 {
+  margin-bottom: 8px;
+}
+
+.fq-class-card button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  background: #ffffff;
+  color: black;
+  cursor: pointer;
+}
+
+.fq-class-card button:hover {
+  background: #f44336;
+  color: white;
+}

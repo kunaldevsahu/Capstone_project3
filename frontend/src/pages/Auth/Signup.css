@@ -1,0 +1,5 @@
+@import "./Login.css";
+
+/* We reuse the same premium layout styles from Login.css for consistency.
+   Additional overrides for Signup can go here if needed. */
+

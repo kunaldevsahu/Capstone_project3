@@ -1,0 +1,251 @@
+/* Premium split layout for Login / Signup */
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  /* Match dashboard background */
+  background: radial-gradient(circle at top left, #222 0, #000 45%, #000 100%);
+  color: #ffffff;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+.auth-hero {
+  position: relative;
+  padding: 3.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  /* Use same gym image feel as dashboard hero */
+  background-image: url("https://images.pexels.com/photos/3837781/pexels-photo-3837781.jpeg?auto=compress&cs=tinysrgb&w=1200");
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Dark overlay similar to .fq-hero-overlay */
+  background: radial-gradient(
+    circle at top,
+    transparent 0,
+    rgba(0, 0, 0, 0.65) 40%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.auth-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(244, 67, 54, 0.35), transparent 55%);
+}
+
+.auth-hero-content {
+  position: relative;
+  max-width: 460px;
+  z-index: 1;
+}
+
+.auth-logo-circle {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  /* Match dashboard logo circle color */
+  background: #f44336;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  box-shadow: 0 10px 25px rgba(244, 67, 54, 0.6);
+}
+
+.auth-hero-content h1 {
+  margin-top: 1.5rem;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.auth-hero-content p {
+  margin-top: 0.9rem;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.auth-hero-content ul {
+  list-style: none;
+  margin-top: 1.75rem;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.auth-hero-content li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+.auth-hero-content li::before {
+  content: "●";
+  font-size: 0.45rem;
+  color: #f97316;
+}
+
+.auth-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2.75rem;
+  background: radial-gradient(circle at top left, rgba(0, 0, 0, 0.9), #000);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  /* Glassy dark card similar to dashboard stat/section cards */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 1.25rem;
+  padding: 2.4rem 2.4rem 2.2rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.auth-card-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.auth-card-header p {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.auth-form {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: #9ca3af;
+}
+
+.auth-field-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-field input,
+.auth-field select {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(156, 163, 175, 0.45);
+  background-color: rgba(15, 23, 42, 0.85);
+  color: #f9fafb;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease,
+    transform 0.05s ease;
+}
+
+.auth-field input::placeholder,
+.auth-field select::placeholder {
+  color: #6b7280;
+}
+
+.auth-field input:focus,
+.auth-field select:focus {
+  border-color: #f44336;
+  box-shadow: 0 0 0 1px rgba(244, 67, 54, 0.6);
+  background-color: rgba(15, 23, 42, 0.95);
+  transform: translateY(-0.5px);
+}
+
+.auth-primary-btn {
+  margin-top: 0.4rem;
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 0.8rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  /* Match dashboard accent with a strong red CTA */
+  background: linear-gradient(135deg, #f44336, #ff7043);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 18px 40px rgba(249, 115, 22, 0.45);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+}
+
+.auth-primary-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 50px rgba(244, 67, 54, 0.65);
+  filter: brightness(1.04);
+}
+
+.auth-primary-btn:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 12px 30px rgba(244, 67, 54, 0.45);
+}
+
+.auth-primary-btn:disabled {
+  cursor: default;
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+.auth-footer-text {
+  margin-top: 0.7rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #d1d5db;
+}
+
+.auth-link {
+  color: #ff7043;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 960px) {
+  .auth-page {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .auth-hero {
+    display: none;
+  }
+
+  .auth-panel {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .auth-card {
+    padding: 2rem 1.7rem 1.8rem;
+  }
+}

@@ -1,0 +1,153 @@
+/* Same background as dashboard */
+.fq-plans-page {
+  padding: 30px;
+  color: #ffffff;
+}
+
+/* Page Header */
+.fq-plans-header {
+  margin-bottom: 20px;
+}
+
+.fq-plans-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.fq-plans-header p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Grid Layout */
+.fq-plans-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 18px;
+}
+
+/* Dashboard-like cards */
+.fq-card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+/* Titles */
+.fq-create-plan h3,
+.fq-plan-list h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  color: #f9fafb;
+}
+
+/* FORM */
+.fq-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.fq-form-group label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #9ca3af;
+}
+
+.fq-form-group input,
+.fq-form-group textarea {
+  background: #020617;
+  border: 1px solid #1f2933;
+  border-radius: 8px;
+  padding: 9px 11px;
+  color: #e5e7eb;
+  font-size: 13px;
+}
+
+.fq-form-group input:focus,
+.fq-form-group textarea:focus {
+  outline: none;
+  border-color: #f44336;
+}
+
+/* Shared primary button style */
+.fq-primary-btn {
+  margin-top: 8px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: none;
+  background: #ffffff;
+  color: #000;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.fq-primary-btn:hover {
+  background: #f44336;
+  color: #fff;
+}
+
+/* TABLE */
+.fq-plan-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fq-loading {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.fq-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.fq-table th {
+  text-align: left;
+  padding: 8px 10px;
+  color: #f44336;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.fq-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e5e7eb;
+}
+
+.fq-danger-btn {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  background: #b91c1c;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.fq-danger-btn:hover {
+  background: #ef4444;
+}
+
+.fq-empty {
+  text-align: center;
+  color: #9ca3af;
+  padding: 16px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .fq-plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
